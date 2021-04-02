@@ -1,0 +1,21 @@
+.banner_area .container .donate-btns {
+  margin-top: 40px;
+}
+
+.banner_area .container .donate-btns .donate-btn:hover {
+ background-color: rgba(0,0,0,0.3);
+}
+
+.banner_area .container .donate-btns .donate-btn {
+  padding: 20px;
+  color: white;
+  border: 2px solid rgb(255, 204, 0);
+  border-radius: 3px;
+}
+
+
+.banner_area .container .donate-btns .donate-btn h3 {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
