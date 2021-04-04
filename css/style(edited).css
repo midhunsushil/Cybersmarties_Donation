@@ -19,3 +19,15 @@
   text-align: center;
   width: 100%;
 }
+
+.cta-area.video-1 {
+  background: #14213d;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.cta-area.video-3{
+  background: #118ab2;
+}
