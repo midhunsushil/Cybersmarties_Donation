@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 .banner_area .container .donate-btns {
   margin-top: 40px;
 }
 
 .banner_area .container .donate-btns .donate-btn:hover {
- background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .banner_area .container .donate-btns .donate-btn {
@@ -13,11 +15,69 @@
   border-radius: 3px;
 }
 
-
 .banner_area .container .donate-btns .donate-btn h3 {
   color: white;
   text-align: center;
   width: 100%;
+}
+
+.elevated-life-solution.banner_inner .overlay {
+  background-image: url("../img/banner/Elevated Life Solutions 2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.elevated-life-sol {
+  padding: 130px 0;
+  background-color: white;
+}
+
+.ways-we-help.elevated-life-sol {
+  background-color: #f9fafc;
+}
+
+.image-collage .image-container {
+  position: relative;
+}
+
+.image-collage .image-container .overlay-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  /* opacity: 0; */
+  color: white;
+  font-size: 20px;
+  padding: 100px 0px;
+  height: 50%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+.single_causes {
+  color: black;
+  /* font-family: 'Oswald', sans-serif; */
+  font-size: 18px;
+}
+
+.single_causes p {
+  text-align: justify;
+}
+
+.single_causes.cause-1 {
+  background: #77DD77;
+}
+
+.single_causes.cause-2 {
+  background: #FF6961;
+}
+
+.single_causes.cause-3 {
+  background: #DA70D6;
 }
 
 .cta-area.video-1 {
@@ -28,12 +88,11 @@
   z-index: 1;
 }
 
-.cta-area.video-3{
+.cta-area.video-3 {
   background: #118ab2;
 }
 
-
-.footer-area .footer_title{
+.footer-area .footer_title {
   text-align: center;
 }
 
