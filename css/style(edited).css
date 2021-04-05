@@ -24,11 +24,16 @@
 .elevated-life-solution.banner_inner .overlay {
   background-image: url("../img/banner/Elevated Life Solutions 2.jpeg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .elevated-life-sol {
   padding: 130px 0;
+  background-color: white;
+}
+
+.good-choices {
   background-color: white;
 }
 
@@ -45,17 +50,24 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   /* Black see-through */
-  color: #f1f1f1;
   width: 100%;
   transition: .5s ease;
-  /* opacity: 0; */
   color: white;
-  font-size: 20px;
   padding: 100px 0px;
   height: 50%;
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .image-collage .image-container .overlay-text {
+    font-size: 3rem;
+  }
+}
+
+.home_page .single_causes {
+  padding: 20px;
 }
 
 .single_causes {
@@ -65,7 +77,7 @@
 }
 
 .single_causes p {
-  text-align: justify;
+  text-align: left;
 }
 
 .single_causes.cause-1 {
