@@ -35,6 +35,20 @@
   background-repeat: no-repeat;
 }
 
+.global-parties .banner_inner .overlay {
+  background-image: url("../img/banner/global-parties.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video-page .banner_inner .overlay {
+  background-image: url("../img/banner/videos-page.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .about-cybersmarties .banner_content h1 {
   color: rgba(255, 255, 255, 0.9);
 }
@@ -98,7 +112,7 @@
 }
 
 .causes_area.home_page .single_causes {
-  min-height: 400px;
+  min-height: 450px;
 }
 
 .single_causes {
@@ -109,6 +123,10 @@
 
 .single_causes p {
   text-align: left;
+}
+
+.features_causes .card-title {
+  text-align: center
 }
 
 .causes_area.academy .cause-1 {
@@ -154,6 +172,10 @@
 
 .cta-area.video-3 {
   background: #118ab2;
+}
+
+.cta-area.video-4 {
+  background: #887BB0;
 }
 
 .footer-area .footer_title {
