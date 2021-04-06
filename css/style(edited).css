@@ -28,6 +28,17 @@
   background-repeat: no-repeat;
 }
 
+.about-cybersmarties.banner_inner .overlay {
+  background-image: url("../img/about/cybersmarties-banner-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-cybersmarties .banner_content h1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .elevated-life-sol {
   padding: 130px 0;
   background-color: white;
@@ -60,6 +71,14 @@
   font-size: 2rem;
 }
 
+.cta-area.partners {
+  background-color: rgb(245, 245, 245);
+}
+
+.cta-area.partners h1 {
+  color: black;
+}
+
 @media only screen and (min-width: 768px) {
   .image-collage .image-container .overlay-text {
     font-size: 3rem;
@@ -68,6 +87,18 @@
 
 .home_page .single_causes {
   padding: 20px;
+}
+
+.causes_area.academy {
+  padding: 0px 0px 100px;
+}
+
+.causes_area.academy .single_causes {
+  min-height: 500px;
+}
+
+.causes_area.home_page .single_causes {
+  min-height: 400px;
 }
 
 .single_causes {
@@ -80,6 +111,19 @@
   text-align: left;
 }
 
+.causes_area.academy .cause-1 {
+  background: #145DA0;
+  color: white;
+}
+
+.causes_area.academy .single_causes, .causes_area.academy .single_causes h3 {
+  color: white;
+}
+
+.causes_area.academy .cause-2 {
+  background: #46211A;
+}
+
 .single_causes.cause-1 {
   background: #77DD77;
 }
@@ -90,6 +134,14 @@
 
 .single_causes.cause-3 {
   background: #DA70D6;
+}
+
+.single_causes.cause-4 {
+  background: #e9c46a;
+}
+
+.single_about .about_left {
+  background: white;
 }
 
 .cta-area.video-1 {
