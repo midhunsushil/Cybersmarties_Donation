@@ -140,17 +140,20 @@
   text-align: center
 }
 
+.home_page.features_causes .card-text {
+  text-align: justify;
+}
 .causes_area.academy .cause-1 {
   background: #145DA0;
   color: white;
 }
 
-.causes_area.academy .single_causes, .causes_area.academy .single_causes h3 {
-  color: white;
+.causes_area.academy .cause-2 {
+  background: #d2691e;
 }
 
-.causes_area.academy .cause-2 {
-  background: #46211A;
+.causes_area.academy .single_causes, .causes_area.academy .single_causes h3 {
+  color: white;
 }
 
 .single_causes.cause-1 {
