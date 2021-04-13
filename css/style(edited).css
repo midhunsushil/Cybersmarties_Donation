@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+.header_area  {
+  z-index: 1030;
+}
+
+.navbar-brand.logo_h {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #8fd23c;
+  font-size: 1.6em;
+}
 
 .banner_area .container .donate-btns {
   margin-top: 40px;
@@ -160,6 +171,11 @@
 
 .single_about .about_left {
   background: white;
+}
+
+.modal-body .modal-para {
+  background: #f5f5f5;
+  padding: 20px;
 }
 
 .cta-area.video-1 {
