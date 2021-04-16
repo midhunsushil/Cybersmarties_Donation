@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 
-.header_area  {
+.header_area {
   z-index: 1030;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .donate-page.features_causes .card-text {
-   text-align: center;
+  text-align: center;
 }
 
 .causes_area.academy .cause-1 {
@@ -191,6 +191,12 @@
   padding: 20px;
 }
 
+.modal-body .source {
+  color: #bbbbbb;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
 .cta-area.video-1 {
   background: #14213d;
   background-size: cover;
@@ -205,6 +211,22 @@
 
 .cta-area.video-4 {
   background: #887BB0;
+}
+
+.cta-area .primary_btn {
+  /* background: #00BFFF; */
+  /* background: #66DDAA; */
+  background: rgba(255,255,255,0.2);
+  font-size: 15px;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 3px;
+}
+
+.cta-area .primary_btn:hover {
+  background: rgba(0,0,0,0.2);
+  color: white;
+  border: 2px solid white;
 }
 
 .footer-area .footer_title {
