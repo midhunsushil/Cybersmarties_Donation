@@ -217,10 +217,21 @@
   /* background: #00BFFF; */
   /* background: #66DDAA; */
   background: rgba(255,255,255,0.2);
-  font-size: 15px;
+  font-size: 13px;
+  padding: 0 30px;
   color: black;
   border: 2px solid gray;
   border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cta-area .primary_btn {
+    font-size: 15px;
+    padding: 0 50px;
+  }
 }
 
 .cta-area .primary_btn:hover {
