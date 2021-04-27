@@ -1,0 +1,135 @@
+<html>
+
+<head>
+  <title>JQVMap - World Map</title>
+  <link href="jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="jqvmap/jquery.vmap.js"></script>
+  <!-- <script type="text/javascript" src="jqvmap/jquery.vmap.world.js" charset="utf-8"></script> -->
+  <script type="text/javascript" src="jqvmap/jquery.vmap.asia.js" charset="utf-8"></script>
+  <script type="text/javascript" src="jqvmap/jquery.vmap.africa.js" charset="utf-8"></script>
+  <script type="text/javascript" src="jqvmap/jquery.vmap.north-america.js" charset="utf-8"></script>
+  <script type="text/javascript" src="jqvmap/jquery.vmap.south-america.js" charset="utf-8"></script>
+</head>
+
+<style>
+  .jqvmap-region {
+    cursor: default !important;
+  }
+
+  .map-pin {
+    width: 64px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: -280px;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: top center;
+    color: #888;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .map-pin span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: black;
+  }
+
+  .red {
+    background-image: url('jqvmap/marker_red.png');
+  }
+
+  /* Setup basic CSS for Label */
+  .jqvmap-pin {
+    cursor: default;
+  }
+
+</style>
+
+<script type="text/javascript">
+  function escapeXml(string) {
+    return string.replace(/[<>]/g, function(c) {
+      switch (c) {
+        case '<':
+          return '\u003c';
+        case '>':
+          return '\u003e';
+      }
+    });
+  }
+
+  jQuery(document).ready(function() {
+
+    var pins = {
+      in: escapeXml('<div class="map-pin red"><span>IN</span></div>')
+    };
+
+    jQuery('#vmap-asia').vectorMap({
+      map: 'asia_en',
+      backgroundColor: 'white',
+      color: '#8ab6d6',
+      colors: {
+        "in": "#0061a8"
+      },
+      selectedColor: null,
+      hoverColor: null,
+      pins: pins,
+      pinMode: 'content'
+    });
+
+    jQuery('#vmap-africa').vectorMap({
+      map: 'africa_en',
+      backgroundColor: '#808080',
+      color: '#fffbed',
+      colors: {
+        // "in": "#5bffad"
+      },
+      selectedColor: null,
+      hoverColor: null,
+      // pins: pins,
+      // pinMode: 'content'
+    });
+    jQuery('#vmap-north-america').vectorMap({
+      map: 'north-america_en',
+      backgroundColor: '#808080',
+      color: '#fffbed',
+      colors: {
+        "us": "#5bffad"
+      },
+      selectedColor: null,
+      hoverColor: null,
+      // pins: pins,
+      // pinMode: 'content'
+    });
+    jQuery('#vmap-south-america').vectorMap({
+      map: 'south-america_en',
+      backgroundColor: '#808080',
+      color: '#fffbed',
+      colors: {
+        // "in": "#5bffad"
+      },
+      selectedColor: null,
+      hoverColor: null,
+      // pins: pins,
+      // pinMode: 'content'
+    });
+  });
+</script>
+
+<body>
+  <div id="vmap-asia" style="width: 1080px; height: 720px; margin-bottom: 100px;"></div>
+  <div id="vmap-africa" style="width: 1080px; height: 720px; margin-bottom: 100px;"></div>
+  <div id="vmap-north-america" style="width: 1080px; height: 720px; margin-bottom: 100px;"></div>
+  <div id="vmap-south-america" style="width: 1080px; height: 720px; margin-bottom: 100px;"></div>
+</body>
+
+</html>

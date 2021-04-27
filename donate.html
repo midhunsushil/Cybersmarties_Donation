@@ -39,7 +39,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
               <ul class="nav navbar-nav menu_nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
                 <li class="nav-item submenu dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
@@ -61,7 +61,7 @@
 
                 <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
 
-                <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+                <li class="nav-item active"><a class="nav-link" href="donate.html">Donate</a></li>
               </ul>
             </div>
           </div>
@@ -111,21 +111,129 @@
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="single_causes cause-2">
-            <h3 class="text-uppercase mb-4">Awards</h3>
-            <img src="img/causes/c7.png" height="100px" alt="">
-          </div>
+          <a data-toggle="modal" data-target="#modal-awards">
+            <div class="single_causes cause-2">
+              <h3 class="text-uppercase mb-4">Awards</h3>
+              <img src="img/causes/c7.png" height="100px" alt="">
+            </div>
+          </a>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="single_causes cause-3">
-            <h3 class="text-uppercase mb-4">Wire transfer</h3>
-            <img src="img/causes/c6.png" height="100px" alt="">
-          </div>
+          <a data-toggle="modal" data-target="#modal-partners">
+            <div class="single_causes cause-3">
+              <h3 class="text-uppercase mb-4">Partners</h3>
+              <img src="img/causes/c6.png" height="100px" alt="">
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
   <!--================ End Causes Area =================-->
+
+  <!-- ==================== Modal Area =================== -->
+  <!-- Modal-partners -->
+  <div class="modal fade" id="modal-partners" tabindex="-1" role="dialog" aria-labelledby="modal-1-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-10 mx-auto">
+                <h1 class="mb-5" style="text-align:center">Partners We Are Proud Of</h1>
+                <div class="row justify-content-center">
+                  <div class="col-4 col-lg-3">
+                    <img src="img/partners/cybersmarties-garda-4-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/partners/unicef-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/partners/cybersmarties-end-violence-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/partners/cybersmarties-code-1-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/partners/cybersmarties-black-bee-2-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/partners/cybersmarties-ul-2-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/partners/cybersmarties-the-american-ireland-fund-2-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal-awards -->
+  <div class="modal fade" id="modal-awards" tabindex="-1" role="dialog" aria-labelledby="modal-1-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-10 mx-auto">
+                <h1 class="mb-5" style="text-align:center">Recent Awards</h1>
+                <div class="row justify-content-center">
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/screenshot-2020-11-06-at-1.45.10-pm-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-garda-4-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-sfa-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-social-1-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-dlab-1-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-thinktech-1-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-boi-1-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-ubs-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                  <div class="col-4 col-lg-3">
+                    <img src="img/awards/cybersmarties-uprise-1-1024x1024.png" style="width:100%;" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== END Modal Area =================== -->
 
   <!--================ Start Cybersmarties Academy =================-->
   <section class="causes_area academy">

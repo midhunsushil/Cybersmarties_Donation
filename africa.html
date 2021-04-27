@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="img/favicon.png" type="image/png">
-  <title>About Us</title>
+  <title>Africa</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style(edited).css">
   <link rel="stylesheet" href="css/responsive.css">
+  <!-- JVQ Map -->
+  <link href="jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="jqvmap/jquery.vmap.js"></script>
+  <script type="text/javascript" src="jqvmap/jquery.vmap.africa.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -73,7 +79,7 @@
 
   <!--================ Home Banner Area =================-->
   <section class="banner_area">
-    <div class="banner_inner elevated-life-solution d-flex align-items-center">
+    <div class="banner_inner asia d-flex align-items-center">
       <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
       <div class="container">
         <div class="banner_content text-center">
@@ -83,28 +89,37 @@
   </section>
   <!--================ End Home Banner Area =================-->
 
-  <!-- ====================== Why elevated life solutions =================== -->
-  <section class="why elevated-life-sol">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-9 mx-auto">
-          <h1 class="mb-5">Why Elevated Life Solutions</h1>
-          <p>Fifty (50%) percent of our world is without access to computers and the internet.
-            Yet billions of dollars of technology go wasted every year.​ <br><br>
+  <!-- ====================== Map =================== -->
 
-            ​This is like feeding and caring for only one of the bulls! ​​​Which causes our bullock cart to move in circles ​and half of the world’s population misses out on the life-altering connectivity to the rest of the world.
-            <br><br>
-            How can we truly move forward when only half of us are cared for?
-            <br><br>
-            ​This is simply no longer acceptable! Our Intent is shifting this!
-            For only when Equally together... We move forward! ​​
-            Elevated Life Solutions Inc. is a registered 501(c)(3) nonprofit organization.
-          </p>
+  <script type="text/javascript">
+
+    jQuery(document).ready(function() {
+
+      jQuery('#vmap-africa').vectorMap({
+        map: 'africa_en',
+        backgroundColor: 'white',
+        enableZoom: false,
+        color: '#8ab6d6',
+        colors: {
+          // "in": "#0061a8"
+        },
+        selectedColor: null,
+        hoverColor: null,
+      });
+    });
+  </script>
+
+  <section class="map">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center"><h1>Africa</h1></div>
+      <div class="row justify-content-center">
+        <div class="col">
+          <div id="vmap-africa" class="" style="width: 100%; height: 720px"></div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ====================== END Why elevated life solutions =================== -->
+  <!-- ====================== END Map =================== -->
 
   <!-- ====================== Ways we help =================== -->
   <section class="elevated-life-sol ways-we-help">
@@ -130,33 +145,6 @@
     </div>
   </section>
   <!-- ====================== END Ways we help =================== -->
-
-  <!-- ===================== Image Collage ==================== -->
-  <section class="image-collage">
-    <div class="container-fluid border border-primary">
-      <div class="row">
-        <div class="col-4 border border-primary image-container p-0">
-          <img width="100%" height="100%" src="https://static.wixstatic.com/media/93be34_0ea7ebad482147679851e07f6bf1be91~mv2.jpg/v1/fill/w_411,h_675,al_c,q_80,usm_0.66_1.00_0.01/93be34_0ea7ebad482147679851e07f6bf1be91~mv2.webp" alt="">
-          <div class="overlay-text">
-            EDUCATION
-          </div>
-        </div>
-        <div class="col-4 border border-primary image-container p-0">
-          <img width="100%" height="100%" src="https://static.wixstatic.com/media/93be34_115fe413f2284c9e8d1678eb43398fb0~mv2.jpg/v1/fill/w_340,h_552,al_c,q_80/93be34_115fe413f2284c9e8d1678eb43398fb0~mv2.webp" alt="">
-          <div class="overlay-text">
-            FREE LAPTOPS
-          </div>
-        </div>
-        <div class="col-4 border border-primary image-container p-0">
-          <img width="100%" height="100%" src="https://static.wixstatic.com/media/93be34_21a71ec58d914e85b71d6ab4f664d609~mv2.jpg/v1/fill/w_416,h_675,al_c,q_80,usm_0.66_1.00_0.01/93be34_21a71ec58d914e85b71d6ab4f664d609~mv2.webp" alt="">
-          <div class="overlay-text">
-            COMMUNITY
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ===================== END Image Collage ==================== -->
 
   <!--================ Start footer Area  =================-->
   <footer>
@@ -253,7 +241,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/stellar.js"></script>

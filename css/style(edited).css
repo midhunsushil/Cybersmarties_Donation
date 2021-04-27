@@ -89,11 +89,18 @@
   width: 100%;
   transition: .5s ease;
   color: white;
-  padding: 100px 0px;
+  padding: 35px 0px;
   height: 50%;
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .image-collage .image-container .overlay-text {
+    font-size: 2rem;
+    padding: 100px 0px;
+  }
 }
 
 .cta-area.partners {
@@ -216,7 +223,7 @@
 .cta-area .primary_btn {
   /* background: #00BFFF; */
   /* background: #66DDAA; */
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   font-size: 13px;
   padding: 0 30px;
   color: black;
@@ -235,7 +242,7 @@
 }
 
 .cta-area .primary_btn:hover {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   color: white;
   border: 2px solid white;
 }
