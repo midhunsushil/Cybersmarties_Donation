@@ -5,6 +5,10 @@
   z-index: 1030;
 }
 
+.subscribe_area {
+  z-index: 1020; 
+}
+
 .navbar-brand.logo_h {
   font-family: 'Barlow Condensed', sans-serif;
   color: #8fd23c;
